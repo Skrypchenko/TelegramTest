@@ -1,0 +1,3 @@
+include ':tdlib'
+include ':app'
+rootProject.name = "TelegramTest"

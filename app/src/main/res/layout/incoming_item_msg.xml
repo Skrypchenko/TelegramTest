@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="DuplicateIds,HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/llIncomingMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="right"
+            android:text="TextView"
+            android:textDirection="rtl"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp">
+
+                <com.skrypchenko.telegramtest.ui.views.CircularImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/user"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/id_text_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-3dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxLength="1"
+                    android:text="מ"
+                    android:textColor="@color/icon_text_chat_bg"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_message_man"
+                android:minWidth="100dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    style="@style/TextStyle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:maxWidth="200dp"
+                    android:gravity="right"
+                    android:text="17:01"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_2_time_chat_color"
+                    android:textDirection="rtl"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    style="@style/TextStyle8"
+                    android:maxWidth="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="TextView dfgdsfgdasfgdfgdfgdfgdfgdfgdfg"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_chat_gray_color"
+                    android:textDirection="rtl"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

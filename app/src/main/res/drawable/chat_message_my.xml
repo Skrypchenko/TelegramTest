@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!--android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp">-->
+
+        <shape android:shape="rectangle">
+
+
+            <stroke
+                android:width="5dp" android:color="@color/chatBorder"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="0dp"
+                />
+
+
+            <solid android:color="@color/isvPumpkinOrange" />
+            <corners
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="0dp"/>
+
+
+        </shape>
+
+    </item>
+    <item android:top="0.5dp" android:left="0.5dp" android:right="0.5dp" android:bottom="0.5dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="0dp"/>
+            <solid android:color="@color/isvPumpkinOrange" />
+        </shape>
+    </item>
+</layer-list>
